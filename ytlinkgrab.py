@@ -9,10 +9,11 @@ author: Peter Jindra
 """
 
 from re import findall
+import codecs
 
 html_input = ""
 
-with open("html_input.txt") as f:
+with codecs.open("html_input.txt", 'r', 'utf-8') as f:
     for line in f:
     	html_input += line
 f.close()
